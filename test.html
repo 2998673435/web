@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
+    <style>
+        .left {
+            width: 200px;
+            background-color: #000;
+
+        }
+        .layui-body {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="layui-logo">
+            <img src="/assets/images/logo.png" alt="" />
+          </div>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+              <a href="">控制台<span class="layui-badge">9</span></a>
+            </li>
+            <li class="layui-nav-item">
+              <a href="">个人中心<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item">
+              <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+              <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="javascript:;">退了</a></dd>
+              </dl>
+            </li>
+          </ul>
+    </nav>
+    <div class="left">
+        <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
+        <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+          <li class="layui-nav-item  layui-this layui-nav-itemed">
+            <a href="javascript:;">默认展开</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">选项1</a></dd>
+              <dd><a href="javascript:;">选项2</a></dd>
+              <dd><a href="">跳转</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+              <dd><a href="">移动模块</a></dd>
+              <dd><a href="">后台模版</a></dd>
+              <dd><a href="">电商平台</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item"><a href="">产品</a></li>
+          <li class="layui-nav-item"><a href="">大数据</a></li>
+        </ul>
+    </div> 
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
+      </div>         
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+
+
+</body>
+</html>
